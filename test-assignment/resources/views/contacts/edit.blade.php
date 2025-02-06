@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
     <h2>Edit Contact</h2>
 
     @if ($errors->any())
@@ -16,3 +18,4 @@
         <input type="text" name="phone" value="{{ old('phone', $contact->phone) }}" required>
         <button type="submit">Update</button>
     </form>
+@endsection

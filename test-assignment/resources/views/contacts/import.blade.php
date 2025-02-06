@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
     <h2>Import Contacts from XML</h2>
 
     @if (session('success'))
@@ -14,3 +16,4 @@
         <input type="file" name="xml_file" required>
         <button type="submit">Import</button>
     </form>
+@endsection
